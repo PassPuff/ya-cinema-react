@@ -6,14 +6,14 @@ const Cinemas = ({ cinemas }) => {
 
   const cinema = cinemas[selectCinema];
   return (
-    <>
+    <div className="container">
       {cinemas.map((cinema, index) => (
         <button onClick={() => setSelectCinema(index)} key={cinema.id}>
           {cinema.name}
         </button>
       ))}
       <Cinema key={cinema.id} cinema={cinema} />
-    </>
+    </div>
   );
 };
 
