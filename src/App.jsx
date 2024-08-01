@@ -5,7 +5,7 @@ import { LayoutPage } from "./layout/components.jsx";
 function App() {
   return (
     <LayoutPage>
-      <Cinemas className="container" cinemas={cinemas} />
+      <Cinemas cinemas={cinemas} />
     </LayoutPage>
   );
 }
