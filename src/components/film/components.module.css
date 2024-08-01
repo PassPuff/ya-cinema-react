@@ -1,6 +1,6 @@
 .item {
   padding: 10px 20px;
   border: 1px solid #eee;
-  min-width: 140px;
+  width: 150px;
   border-radius: 10px;
 }

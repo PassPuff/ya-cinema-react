@@ -1,18 +1,20 @@
-import Logo from '../assets/react.svg';
+import Logo from "../assets/react.svg";
+import styles from "./components.module.css";
 
-export const LayoutPage = ({children}) => {
+export const LayoutPage = ({ children }) => {
   return (
     <>
-      <header style={{textAlign: "center"}}>
-        <img src={Logo} alt="logo"/>
+      <header className={styles.header}>
+        <img src={Logo} alt="logo" />
         <span>Header Page</span>
       </header>
 
       <main>{children}</main>
 
-      <footer style={{textAlign: "center"}}>
-        <img src={Logo} alt="logo"/>
-        <span>Footer Page</span></footer>
+      <footer className={styles.footer}>
+        <img src={Logo} alt="logo" />
+        <span>Footer Page</span>
+      </footer>
     </>
-  )
-}
+  );
+};
